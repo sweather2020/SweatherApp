@@ -71,7 +71,7 @@ const filterClothing = () =>{
         console.log(panel);
         const isMatch = checkMatch(panel.alt, searchTerm);
         if (isMatch){
-            panel.parentNode.style.display='block';
+            panel.parentNode.style.display='flex';
         }
         else{
             panel.parentNode.style.display='none';
