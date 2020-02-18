@@ -71,10 +71,10 @@ const filterClothing = () =>{
         console.log(panel);
         const isMatch = checkMatch(panel.alt, searchTerm);
         if (isMatch){
-            panel.classList.remove('hide');
+            panel.parentNode.style.display='block';
         }
         else{
-            panel.classList.add('hide');
+            panel.parentNode.style.display='none';
         }
     }
 };

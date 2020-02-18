@@ -59,6 +59,8 @@ body{
     border: 1px #ccc solid;
     padding:5px;
     box-shadow: 1px 1px 2px #ccc; /*2px blur*/
+    width: 250px;
+    height: 250px;
 }
 
 .grid .add-panel{
@@ -69,6 +71,8 @@ body{
     background-color: var(--primary-color);
     justify-content: center;
     align-items: center;
+    width: 250px;
+    height: 250px;
 }
 
 .grid .add-panel i{
@@ -78,8 +82,8 @@ body{
 }
 
 .grid .item img{
-    width:160px;
-    height:160px;
+    width:100%;
+    height:100%;
 }
 
 .app-footer{
