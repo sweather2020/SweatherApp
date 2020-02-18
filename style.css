@@ -1,0 +1,123 @@
+:root {
+    --primary-color:#f9f9f9;
+}
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+html,
+body{
+    margin:0;
+    height: 100%; /* adding this to make footer sticky */
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    display: flex; /* adding this to make footer sticky */
+    flex-direction: column; /* adding this to make footer sticky */
+}
+
+.content{
+    flex: 1 0 auto; /* adding this to make footer sticky */
+}
+
+.container{
+    width:100%;
+    margin: 0 auto; /* 0 top and bottom, auto left and right*/
+    padding:10px;
+    /*overflow: none;*/
+}
+
+
+.app-header{
+    background-color: var(--primary-color);
+    padding-bottom: 20px;
+    
+    /*box-shadow: 2px 2px 8px #d3d3d3;*/
+}
+.app-header .container { /* want elements inside container to be flex */
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr); /*repeating twice 1fr, creating two columns*/
+    grid-gap: 10px;
+    height:100%;
+    overflow:auto;
+}
+
+.grid .item{
+    display: flex;
+    flex-direction: column;
+    border: 1px #ccc solid;
+    padding:5px;
+    box-shadow: 1px 1px 2px #ccc; /*2px blur*/
+}
+
+.grid .add-panel{
+    display: flex;
+    flex-direction: column;
+    border: 1px #ccc solid;
+    padding:5px;
+    background-color: var(--primary-color);
+    justify-content: center;
+    align-items: center;
+}
+
+.grid .add-panel i{
+    color:black;
+    opacity:0.7;
+    font-size: 50px;
+}
+
+.grid .item img{
+    width:160px;
+    height:160px;
+}
+
+.app-footer{
+    background-color: var(--primary-color); 
+    padding:10px;
+    font-size:14px;
+    margin-top: 10px;
+    flex-shrink: 0; /* adding this to make footer sticky */
+}
+
+.app-footer ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around; /*put space in between elements and outside of element */
+    list-style: none;
+}
+
+.app-footer ul li{
+    display: flex; /*targeting list items and making them flex */
+    flex-direction: column;
+    align-items: center;
+}
+
+.app-footer ul li i{
+    font-size: 20px;
+    margin-bottom:5px;
+}
+
+.app-footer ul li .fa-door-closed{
+    /*color:#686868;*/
+    opacity:0.4;
+}
+
+.app-footer ul #closet-icon p{
+    opacity:0.4;
+}
+
+.hide{
+    display:none;
+}
+
