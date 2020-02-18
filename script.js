@@ -65,16 +65,24 @@ const myClothing = [
 
 const filterClothing = () =>{
     const searchTerm = document.querySelector("#search").value;
-    const panels = document.querySelectorAll("div.item>img");
+    const panels = document.querySelectorAll("div.item");
+
+    for (panel of panels){
+            panel.style.display = 'flex'
+        }
+
+
     console.log(panels);
     for (panel of panels){
         console.log(panel);
-        const isMatch = checkMatch(panel.alt, searchTerm);
+        const isMatch = checkMatch(panel.firstElementChild.alt, searchTerm);
         if (isMatch){
             panel.classList.remove('hide');
+
         }
         else{
             panel.classList.add('hide');
+            panel.style.display = 'none'
         }
     }
 };
