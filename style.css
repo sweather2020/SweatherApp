@@ -11,18 +11,16 @@
 html,
 body{
     margin:0;
-    height: 100%; /* adding this to make footer sticky */
+    height: 100%; /* adding this to make footer sticky */    
 }
 
 body{
     font-family: 'Roboto', sans-serif;
     display: flex; /* adding this to make footer sticky */
-    flex-direction: column; /* adding this to make footer sticky */
+    flex-direction: column; /* adding this to make footer sticky */   
 }
 
-.content{
-    flex: 1 0 auto; /* adding this to make footer sticky */
-}
+
 
 .container{
     width:100%;
@@ -51,30 +49,13 @@ body{
 
 .app-header{
     background-color: var(--primary-color);
-    
-    /*box-shadow: 2px 2px 8px #d3d3d3;*/
 }
-/*.app-header .container {*/ /* want elements inside container to be flex */
-    /*display:flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-}*/
-
-
 
 .filter-header{
     background-color: var(--primary-color);
 }
 
 #filter-bar{
-    /*
-    position:fixed;
-    width:200px;
-    height:100%;
-    background-color: silver;
-    overflow:auto;
-    left:-200px;*/
     height: 100%;
     width: 0px;
     position: fixed;
@@ -85,7 +66,6 @@ body{
     overflow-x: hidden;
     transition: 0.5s;
     box-shadow: 3px 2px 2px #ccc;
-    /*padding-top: 60px;*/
 }
 
 #filter-bar.active{
@@ -174,6 +154,12 @@ body{
 
 
 #grid .item{
+    /*display:flex;
+    align-items:flex-start;
+    justify-content: center;
+    border: 1px solid black;
+    height:100%;*/
+
     border: 1px #ccc solid;
     width:175px;
     height:175px;
@@ -185,6 +171,7 @@ body{
     display: flex;
     flex-direction: column;
     border: 1px #ccc solid;
+    /*padding:1px;*/
     width:175px;
     height:175px;
     margin-bottom:7px;
@@ -208,7 +195,7 @@ body{
     background-color: var(--primary-color); 
     padding:10px;
     font-size:14px;
-    margin-top: 10px;
+    margin-top: auto;
     flex-shrink: 0; /* adding this to make footer sticky */
 }
 
@@ -242,4 +229,3 @@ body{
 .hide{
     display:none;
 }
-

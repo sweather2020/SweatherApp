@@ -17,7 +17,7 @@ const myClothing = [
         img: 'https://i.pinimg.com/236x/bb/4b/1b/bb4b1bb36b1e53d6207c6433b637fede.jpg',
         category:'shoes',
         color:'white',
-        season: ['fall','spring', 'summer']
+        season: ['fall','winter','spring', 'summer']
     },
     {
         id:2,
@@ -47,7 +47,7 @@ const myClothing = [
         id:5,
         name:'mustard-beanie',
         img:'https://i.pinimg.com/236x/da/73/2d/da732d097980ccac4d116e6312b905d3.jpg',
-        category:'hats',
+        category:'accessories',
         color:'yellow',
         season: ['fall','winter']
     },
@@ -79,7 +79,6 @@ const initialLoading = () =>{
     for (i=0;i<myClothing.length;i++){
         let div = document.createElement("div");
         div.classList.add("item");
-        console.log("My div after adding item" + div);
         let img = document.createElement('img');
         img.src=myClothing[i].img;
         div.appendChild(img);
@@ -203,7 +202,7 @@ const applyFilter = () =>{
 
         
     })
-    displayArea.innerHTML="";
+   displayArea.innerHTML="";
     for (i=0; i<filteredList.length; i++){
         let div = document.createElement("div");
         div.classList.add("item");
@@ -212,11 +211,6 @@ const applyFilter = () =>{
         div.appendChild(img);
         displayArea.appendChild(div);
 
-        /*
-        let img = document.createElement('img');
-        img.src=filteredList[i].img;
-        displayArea.appendChild(img);
-        //displayArea.innerHTML+=filteredList[i].img+`<br>`;*/
     }
     // clearing out criteria after hitting Apply
     for (const checkbox of categoryCheckboxes){
