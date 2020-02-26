@@ -1,0 +1,136 @@
+:root {
+    --primary-color:#f9f9f9;
+}
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+html,
+body{
+    margin:0;
+    height: 100%; /* adding this to make footer sticky */    
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    display: flex; /* adding this to make footer sticky */
+    flex-direction: column; /* adding this to make footer sticky */   
+}
+
+
+
+.container{
+    width:100%;
+    margin: 0 auto; /* 0 top and bottom, auto left and right*/
+    padding:10px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    /*overflow: none;*/
+}
+
+.container h1{
+    margin-top:10px;
+    font-size:35px;
+}
+
+.app-header{
+    background-color: var(--primary-color);
+}
+
+#grid-container{
+    display:grid;
+    /*grid-template-columns: repeat(2, 1fr);*/ /*repeating twice 1fr, creating two columns*/
+    /*
+    grid-gap: 3px;
+    overflow:auto;
+    margin-left:7px;
+    padding-top:10px; */
+    grid-template-columns: 25% 25% 25% 25%;
+    /* grid-template-rows: 25% 25% 25% 25%; */
+    grid-template-areas: 
+        "w w o o"
+        "w w o o"
+        "e e o o"
+        "e e o o"
+        "e e s s"
+        "q q s s"
+        "q q s s";
+    height:100%;
+    /*grid-gap:5px;*/
+}
+
+#grid-container .weather{
+    grid-area: w;
+    background-color:#f9f9f9;
+    margin:3px;
+}
+
+#grid-container .events{
+    grid-area: e;
+    background-color:#f9f9f9;
+    margin:3px;
+}
+
+#grid-container .quote{
+    grid-area: q;
+    background-color:#f9f9f9;
+    margin:3px;
+}
+
+#grid-container .outfit{
+    grid-area: o;
+    background-color:#f9f9f9;
+    margin:3px;
+}
+
+#grid-container .suggestor{
+    grid-area: s;
+    background-color:#f9f9f9;
+    margin:3px;
+}
+
+
+
+.app-footer{
+    background-color: var(--primary-color); 
+    padding:10px;
+    font-size:14px;
+    margin-top: auto;
+    flex-shrink: 0; /* adding this to make footer sticky */
+}
+
+.app-footer ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around; /*put space in between elements and outside of element */
+    list-style: none;
+}
+
+.app-footer ul li{
+    display: flex; /*targeting list items and making them flex */
+    flex-direction: column;
+    align-items: center;
+}
+
+.app-footer ul li i{
+    font-size: 20px;
+    margin-bottom:5px;
+}
+
+.app-footer ul li .fa-home{
+    /*color:#686868;*/
+    opacity:0.4;
+}
+
+.app-footer ul #home-icon p{
+    opacity:0.4;
+}
+
+.hide{
+    display:none;
+}
