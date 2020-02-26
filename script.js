@@ -87,5 +87,21 @@ const checkMatch = (clothingCategory,searchTerm) => {
     return false;
 }
 
+// const menu_setup = () =>{
 
-document.querySelector('#search').onkeyup = filterClothing;
+//     var menubar_icons = new Array(5)
+//     menubar_icons[0] = document.getElementsByClassName('fa-home')[0]
+//     menubar_icons[1] = document.getElementsByClassName('fa-tshirt')[0]
+//     menubar_icons[2] = document.getElementsByClassName('fa-door-closed')[0]
+//     menubar_icons[3] = document.getElementsByClassName('fa-search')[0]
+//     menubar_icons[4] = document.getElementsByClassName('fa-user')[0]
+
+//     for (var i = 0 ; i < menubar_icons.length; i++){
+//         menubar_icons[i].addEventListener("click", function(ev){
+//             alert('page not available');
+//         })
+//     }
+
+
+// }
+
