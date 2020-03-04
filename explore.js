@@ -15,15 +15,5 @@ const filterArticles = () =>{
     }
 };
 
-// const checkMatch = (text_content,searchTerm) => {
-//     const text = text_content; 
-//     // if (text.toUpperCase().indexOf(searchTerm.toUpperCase()) > -1) {
-//     //     return true;
-//     // }
-//     // return false;
-//     return text.toUpperCase().includes(searchTerm.toUpperCase())
-// }
-
-// var search = document.getElementById("#search")
 
 document.querySelector('#search').onkeyup = filterArticles;
