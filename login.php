@@ -19,6 +19,6 @@ session_start();
 // Storing session data
 $_SESSION["isLogged"] = "1";
 
-header('Location:' . '../home.php');
+header('Location:' . '../SweatherApp-Proj6/home.php');
 
 exit();

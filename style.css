@@ -20,62 +20,6 @@ body{
     flex-direction: column; /* adding this to make footer sticky */   
 }
 
-
-
-#outfit-box {
-    width: 100%;
-    height: 80%;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-#outfit-box section {
-    margin-bottom: 30px;
-}
-
-#outfit-box .clothing {
-    width: 90%;
-    height: 100%;
-    border-style: solid;
-    border-color: black;
-}
-
-#outfit-box .selector {
-    width: 90%;
-    height: 80px;
-    border-style: solid;
-    border-color: black;
-}
-
-#buttons {
-    width: 100%;
-    height: 20%;
-    display:flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: center;
-}
-
-#buttons section {
-    margin-left: 5%;
-    margin-right: 5%;
-}
-
-#buttons .outfit-button {
-    height: 60%;
-    width: 100%;
-    text-align: center;
-    font-size: x-large;
-    border-style: solid;
-    border-color: black;
-}
-
-#buttons i {
-    padding: 20px;
-}
-
 .container{
     width:100%;
     margin: 0 auto; /* 0 top and bottom, auto left and right*/
@@ -197,8 +141,7 @@ body{
     grid-gap: 3px;
     overflow:auto;
     margin-left:7px;
-    padding-top:10px;  
-    
+    padding-top:10px;     
 }
 
 #wrapper{
@@ -219,6 +162,7 @@ body{
     height:175px;
     margin-bottom:7px;
     box-shadow: 1px 2px 2px #ccc; /*2px blur*/
+    border-radius:7px;
 }
 
 #grid .add-panel{
@@ -232,6 +176,7 @@ body{
     background-color: var(--primary-color);
     justify-content: center;
     align-items: center;
+    border-radius:7px;
 }
 
 #grid .add-panel i{
@@ -266,20 +211,28 @@ body{
     align-items: center;
 }
 
-.app-footer ul li i{
-    font-size: 20px;
+.app-footer ul li a{
+    font-size: 18px;
     margin-bottom:5px;
+    text-decoration:none;
+    color: black;
+    opacity: 0.4;
+    font-size: 22px;
 }
 
 .app-footer ul li .fa-door-closed{
-    /*color:#686868;*/
-    opacity:0.4;
+    opacity:1.0;
 }
 
 .app-footer ul #closet-icon p{
-    opacity:0.4;
+    opacity:1.0;
 }
 
 .hide{
     display:none;
+}
+
+input[type='checkbox'] {
+    width:20px;
+    height:20px;
 }

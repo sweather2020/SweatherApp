@@ -4,59 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie-edge">
-    <link rel="stylesheet" href="explore_style.css"/>
+    <link rel="stylesheet" href="explore.css"/>
     <link rel="stylesheet" href="fontawesome-free-5.12.1-web/css/all.min.css"/>
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     
     <title>Sweather Explore Page</title>
 </head>
 <body onload="initialLoading()">
-    <!--<div id = "splash">
-        <img src ="" alt ="" class="logo"/>
-    </div>-->
 
     <!-- wrap around everything except footer b/c we want footer to be sticky-->
     <div class = "content">
         <header class="app-header">
             <div class="container">
+                <div class="toggle-btn" onClick="openNav()">
+                    <!-- <i class="fas fa-filter"></i> -->
+                </div>
                 <h1>EXPLORE</h1>
-                <input type="text" id="search" placeholder="Search here">
-                <!-- <h3>FILTER</h3> -->
+                
+                
             </div>
         </header>
     </div>
 
-    <!-- <div class = "list">
+    <div class = "list">
     <ul style="list-style-type:none;">
         <a href = "https://www.realsimple.com/beauty-fashion/best-fashion-advice">The Best Fashion Advice of All Time (and How to Use It in Real Life)</a>
         <a href = "https://news.adidas.com/x/adidas-launches-new-line-in-collaboration-with-pok-mon/s/c2a2d1f5-5efd-4f28-99ab-831ca1732258">Adidas Launches New Line In Collaboration With Pokémon</a>
         <a href = "https://www.thebalancecareers.com/best-interview-attire-for-every-type-of-interview-2061364">The Best Outfits for Job Interviews
         </a>
       </ul>  
-    </div> -->
-
-    <div class="grid_container">
-
-        <div class="item">
-            <a href = "https://www.realsimple.com/beauty-fashion/best-fashion-advice">The Best Fashion Advice of All Time (and How to Use It in Real Life)</a>
-        </div>
-
-        <div class="item">
-            <a href = "https://news.adidas.com/x/adidas-launches-new-line-in-collaboration-with-pok-mon/s/c2a2d1f5-5efd-4f28-99ab-831ca1732258">Adidas Launches New Line In Collaboration With Pokémon</a>
-        </div>
-
-        <div class="item">
-            <a href = "https://www.thebalancecareers.com/best-interview-attire-for-every-type-of-interview-2061364">The Best Outfits for Job Interviews
-            </a>
-        </div>
-
     </div>
-
 
     <div class="app-footer">
         <ul>
             <li>
-                <a href = "home.html" class="fas fa-home"></a>
+                <a href = "home.php" class="fas fa-home"></a>
                 <p>HOME</p>
             </li>
 
@@ -65,12 +47,12 @@
                 <p>STYLEME</p>
             </li>
 
-            <li id="closet-icon">
+            <li>
                 <a href = "closet.html" class="fas fa-door-closed"></a>
                 <p>CLOSET</p>
             </li>
 
-            <li>
+            <li id="explore-icon">
                 <a href = "explore.html" class="fas fa-search"></a>
                 <p>EXPLORE</p>
             </li>
@@ -82,6 +64,6 @@
         </ul>
     </div>
 
-    <script src="explore.js"></script>
+    <script src="filter.js"></script>
 </body>
 </html>

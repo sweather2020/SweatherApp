@@ -13,12 +13,12 @@
 	<title>Sweather Home Page</title>
 </head>
 
-<body onload="initialLoading()">
+<body onload=initialLoading()>
 
     <div class = "content">
         <header class="app-header">
             <div class="container">
-                <h1>Welcome Brian</h1>
+                <h1>Welcome back, Brian</h1>
             </div>
         </header>
     </div>
@@ -27,13 +27,15 @@
     <!--<p><a href="auth/logout.php">Logout</a>-->
 
     <div id="grid-container">
-            <section class="weather">
+            <a href="https://openweathermap.org/city" class="weather">
+            <section>
                 <div id="today">
                     TODAY
                 </div>
                 
                 <section id="weather-content">weather goes here</section>
             </section>
+            </a>
 
             <section class="outfit">
                 <div id="outfit-today">
@@ -44,36 +46,36 @@
                 <img src="img/nikepants.jpg"/>
                 <img src="img/adidasshoes.jpg"/>
 
-                <input type="submit" class="btn" value="STYLEME">
+                <!--<input type="submit" class="btn" value="STYLEME">-->
 
             </section>  
+            
+            <a href="https://calendar.google.com/calendar/r?pli=1" class="events">
+                <section>
+                    <div id="events-today">
+                        EVENTS
+                    </div>
 
-            <section class="events">
-                <div id="events-today">
-                    EVENTS
-                </div>
+                    <span>
+                        <h3 id="myDate">
+                        </h3>
+                    </span>
 
-                <span>
-                    <h3>
-                    FRI, FEB 28
-                    </h3>
-                </span>
+                    <div class="event-block">
+                        <h4>CS 213</h4>
+                        <h5>11AM-12:20PM</h5>
+                    </div>
 
-                <div class="event-block">
-                    <h4>CS 213</h4>
-                    <h5>11AM-12:20PM</h5>
-                </div>
+                    <div class="event-block">
+                        <h4>CS 330</h4>
+                        <h5>1-1:50PM</h5>
+                    </div>
 
-                <div class="event-block">
-                    <h4>CS 330</h4>
-                    <h5>1-1:50PM</h5>
-                </div>
-
-                <div class="event-block">
-                    <h4>DSGN 308</h4>
-                    <h5>2-5PM</h5>
-                </div>
-
+                    <div class="event-block">
+                        <h4>DSGN 308</h4>
+                        <h5>2-5PM</h5>
+                    </div>
+                <!--
                 <div class="event-block">
                     <h4>DINNER W/ FRED</h4>
                     <h5>9-11PM</h5>
@@ -82,11 +84,12 @@
                 <div class="event-block">
                     <h4>REHEARSAL</h4>
                     <h5>9-11PM</h5>
-                </div>
+                </div>-->
 
                 
-            </section>   
-
+                </section>
+            </a>
+            <!--
             <section class="quote">
                 <div id="quote-today">
                     QUOTE
@@ -107,14 +110,14 @@
                 <img src="https://i.pinimg.com/236x/e9/80/2e/e9802e933583c12e28c62b15a1534859.jpg"/>
                 <img src="https://i.pinimg.com/236x/2b/4b/29/2b4b292b6215140441f5adf97b125c77.jpg"/>
 
-            </section>  
+            </section>  -->
         </div>
     </div>
 
     <div class="app-footer">
         <ul>
             <li>
-                <a href = "home.php" class="fas fa-home"></a>
+                <a href = "SweatherApp-Proj6/home.php" class="fas fa-home"></a>
                 <p>HOME</p>
             </li>
 
