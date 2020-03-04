@@ -31,6 +31,7 @@ function getWeather()
                                     <div>
                                         <h3>Temperature is ${(data.main.temp).toFixed(0)} K</h3>
                                         <h4>${String(data.weather[0].description)}</h4>
+                                        <img src=http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png></img>
                                     </div>
                                 </section>`;
                 document.getElementById('weather-content').innerHTML += template;
