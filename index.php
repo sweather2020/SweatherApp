@@ -29,35 +29,37 @@
 
 <body>
 	<div class="login-containter">
-		<form action="auth/login.php" method="post">
+		<form action="login.php" method="post">
 			<div id="logo-header">
 				<h2>SWEATHER</h2>
 				<img class="logo" src="sweather_logo.png">
 			</div>	
 			
-				<div class="input-div" tabindex="1">
-					<div class="i">
-						<i class="fas fa-user"></i>
-					</div>
-					<div>
-						<!--<h5>EMAIL</h5>-->
-						<input type="text" name="email" placeholder="EMAIL">
-					</div>
+			<div class="input-div" tabindex="1">
+				<div class="i">
+					<i class="fas fa-user"></i>
 				</div>
-
-				<div class="input-div">
-					<div class="i">
-						<i class="fas fa-lock"></i>
-					</div>
-					<div>
-						<!--<h5>PASSWORD</h5>-->
-						<input type="password" name="password" placeholder="PASSWORD">
-					</div>
+				<div>
+					<!--<h5>EMAIL</h5>-->
+					<input type="text" name="email" placeholder="Email">
 				</div>
+			</div>
 
-				<a href="#">FORGOT PASSWORD?</a>
+			<div class="input-div">
+				<div class="i">
+					<i class="fas fa-lock"></i>
+				</div>
+				<div>
+					<!--<h5>PASSWORD</h5>-->
+					<input type="password" name="password" placeholder="Password">
+				</div>
+			</div>
 
-				<input type='submit' class="btn" value="LOGIN">
+			<a id="forgot-password" href="#">Forgot Your Password?</a>
+
+			<div id="sign-in">Sign in</div>
+			<input type='submit' class="btn" value=&#8594>
+			<div id="create-account">Don't have an account? <a id="create" href="signup.html"><u>Create</u></a></div>
 			
 			
 			<input type="hidden" name="submitted" value="1">
