@@ -38,6 +38,11 @@ body{
     font-size:35px;
 }
 
+#user_first_name{
+    margin-top:10px;
+    font-size:35px;
+}
+
 .app-header{
     background-color: var(--primary-color);
 }
