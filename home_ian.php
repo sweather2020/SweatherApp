@@ -40,8 +40,8 @@
                     OUTFIT
                 </div>
 
-                <img src="img/northfacehooie.jpg"/>
-                <img src="img/nikepants.jpg"/>
+                <img src="img/patagoniaparka.jpg"/>
+                <img src="img/jeans.jpg"/>
                 <img src="img/adidasshoes.jpg"/>
 
                 <input type="submit" class="btn" value="STYLEME">
