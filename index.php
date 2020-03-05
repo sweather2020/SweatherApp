@@ -29,7 +29,7 @@
 
 <body>
 	<div class="login-containter">
-		<form action="auth/login.php" method="post">
+		<form action="login.php" method="post">
 			<div id="logo-header">
 				<h2>SWEATHER</h2>
 				<img class="logo" src="sweather_logo.png">

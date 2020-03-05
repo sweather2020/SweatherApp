@@ -24,13 +24,13 @@ session_start();
 // Storing session data
 $_SESSION["isLogged"] = "1";
 
-if ( $credentials['email'] !== $_POST['email'] AND $credentials['password'] !== $_POST['password'] ) 
+if ( $credentials['email'] == $_POST['email'] AND $credentials['password'] == $_POST['password'] ) 
 {    
-    header('Location:' . '../home_brian.php');
+    header('Location:' . 'home_brian.php');
 }
-if ( $credentials['email2'] !== $_POST['email'] AND $credentials['password2'] !== $_POST['password'] ) 
+if ( $credentials['email2'] == $_POST['email'] AND $credentials['password2'] == $_POST['password'] ) 
 {    
-    header('Location:' . '../home_ian.php');
+    header('Location:' . 'home_ian.php');
 }
 
 exit();
