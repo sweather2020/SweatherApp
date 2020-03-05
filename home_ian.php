@@ -60,8 +60,8 @@
                 </span>
 
                 <div class="event-block">
-                    <h4>CS 213</h4>
-                    <h5>11AM-12:20PM</h5>
+                    <h4>MATH366</h4>
+                    <h5>10AM-10:50PM</h5>
                 </div>
 
                 <div class="event-block">
@@ -70,20 +70,19 @@
                 </div>
 
                 <div class="event-block">
-                    <h4>DSGN 308</h4>
-                    <h5>2-5PM</h5>
+                    <h4>CS 349</h4>
+                    <h5>3:30-4:50PM</h5>
                 </div>
 
                 <div class="event-block">
-                    <h4>DINNER W/ FRED</h4>
-                    <h5>9-11PM</h5>
+                    <h4>NAP</h4>
+                    <h5>5-7PM</h5>
                 </div>
 
                 <div class="event-block">
-                    <h4>REHEARSAL</h4>
-                    <h5>9-11PM</h5>
+                    <h4>DINNER</h4>
+                    <h5>7-8PM</h5>
                 </div>
-
                 
             </section>   
 
