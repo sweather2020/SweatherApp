@@ -1,19 +1,8 @@
 <?php
     session_start();
-    echo('BEGINNING OF HOME PAGE');
-    if (array_key_exists("user", $_SESSION) && $_SESSION["user"]=='brian@example.com'){
-        echo('BRIAN');
-        header('Location:' . 'home_brian.php');
-    }
 
-    else if (array_key_exists("user", $_SESSION) && $_SESSION["user"]=='ian@example.com'){
-        echo('IAN');
-        header('Location:' . 'home_ian.php');
-    }
-
-    else{
-        echo('NEW USER');
-        header('Location:' . 'home_newuser.php');
+    if (array_key_exists("user", $_SESSION) == false){
+        header('Location:' . 'index.php');
     }
 ?>
 
@@ -37,9 +26,9 @@
         <div class = "content">
             <header class="app-header">
                 <div class="container">
-                    <div id="cont-greet">
-                        <h1 id="greeting"></h1>
-                    </div>
+                <div id="cont-greet">
+                    <h1 id="greeting"></h1>
+</div>
                 </div>
             </header>
         </div>
@@ -48,6 +37,7 @@
         <!--<p><a href="auth/logout.php">Logout</a>-->
 
         <div id="grid-container">
+
                 <section class="quote">
                     <div id="quote-today">
                         QUOTE
@@ -55,48 +45,29 @@
                     
                     <section id="quote-content">quote goes here</section>
                 </section> 
-        
                 <a href="https://openweathermap.org/city" class="weather">
                 <section>
                     <div id="today">
-                        WEATHER
+                        TODAY
                     </div>
                     
                     <section id="weather-content">weather goes here</section>
                 </section>
                 </a>
 
-                <a href="styleme.html" class="outfit">
-                    <section>
-                        <div id="outfit-today">
-                            OUTFIT
-                        </div>
+                <a href="closet_empty.html" class="outfit">
+                <section>
+                    <div id="outfit-today">
+                        OUTFIT
+                    </div>
 
-                        <div>
+                    <div class="event-block">
+                            <h4>Oops, there are currently no clothes in your closet!</h4>
+                            <h5>Click here to add clothes</h5>
+                    </div>
 
-                        There are currently no clothes in your closet!
-                        </div>
-
-                        <div>
-                            Click here to add clothes
-                        </div>
-                        <div>
-                        </div>
-
-
-                        asdfasdfasdf
-                        asdfasdfasdf asdfasdfasdf asdfasdfasdf asdfasdfasdf asdfasdfasdf asdfasdfasdf asdfasdfasdf
-
-
-
-                        asdfasdfasdfv
-
-                        <div>
-                        </div>
-                        <div>
-                        </div>
-
-                    </section>  
+                    <div>
+                </section>  
                 </a>
 
                 <a href="https://calendar.google.com/calendar/r?pli=1" class="events">
@@ -123,19 +94,7 @@
                         <div class="event-block">
                             <h4>REHEARSAL</h4>
                             <h5>5-8PM</h5>
-                        </div>
-                    <!--
-                    <div class="event-block">
-                        <h4>DINNER W/ FRED</h4>
-                        <h5>9-11PM</h5>
-                    </div>
-
-                    <div class="event-block">
-                        <h4>REHEARSAL</h4>
-                        <h5>9-11PM</h5>
-                    </div>-->
-
-                    
+                        </div>                   
                     </section>
                 </a>
             </div>
@@ -155,7 +114,7 @@
             </li>
 
             <li id="closet-icon">
-                <a href = "closet.html" class="fas fa-door-closed"></a>
+                <a href = "closet_empty.html" class="fas fa-door-closed"></a>
                 <p>CLOSET</p>
             </li>
 

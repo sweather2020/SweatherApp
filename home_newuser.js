@@ -24,11 +24,11 @@ const returnGreeting = () =>{
     const greeting = document.getElementById('greeting');
 
     if (curHr < 12) {
-        greeting.innerText = "Good morning, Brian"
+        greeting.innerText = "Good morning, User"
     } else if (curHr < 18) {
-        greeting.innerText = "Good afternoon, Brian"
+        greeting.innerText = "Good afternoon, User"
     } else {
-        greeting.innerText = "Good evening, Brian"
+        greeting.innerText = "Good evening, User"
     }
 }
 

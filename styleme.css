@@ -14,6 +14,8 @@ body{
     height: 100%; /* adding this to make footer sticky */    
 }
 
+
+
 body{
     font-family: 'Roboto', sans-serif;
     display: flex; /* adding this to make footer sticky */
@@ -23,6 +25,7 @@ body{
 .container h1{
     font-family:'Lato';
 }
+
 
 #outfit-box {
     width: 100%;
@@ -217,7 +220,6 @@ body{
     height:100%;*/
 
     border: 1px #ccc solid;
-    border-radius: 5px;
     width:175px;
     height:175px;
     margin-bottom:7px;
@@ -227,21 +229,19 @@ body{
 #grid .add-panel{
     display: flex;
     flex-direction: column;
-    border: 1px white solid;
-    box-shadow: 1px 2px 2px #ccc; /*2px blur*/
+    border: 1px #ccc solid;
     /*padding:1px;*/
-    border-radius:5px;
     width:175px;
     height:175px;
     margin-bottom:7px;
-    background-color: #71829d;
+    background-color: var(--primary-color);
     justify-content: center;
     align-items: center;
 }
 
 #grid .add-panel i{
-    color:white;
-    
+    color:black;
+    opacity:0.7;
     font-size: 50px;
 }
 
@@ -271,10 +271,6 @@ body{
     align-items: center;
 }
 
-.app-footer ul p{
-    opacity:0.4;
-}
-
 .app-footer ul li a{
     font-size: 18px;
     margin-bottom:5px;
@@ -284,11 +280,15 @@ body{
     font-size: 22px;
 }
 
-.app-footer ul li .fa-door-closed{
+.app-footer ul p{
+    opacity:0.4;
+}
+
+.app-footer ul li .fa-tshirt{
     opacity:1.0;
 }
 
-.app-footer ul #closet-icon p{
+.app-footer ul #style-icon p{
     opacity:1.0;
 }
 

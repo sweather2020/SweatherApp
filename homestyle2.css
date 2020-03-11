@@ -1,5 +1,5 @@
 :root {
-    --primary-color:#f9f9f9;
+    --primary-color:#ececec;
 }
 
 *{
@@ -20,31 +20,39 @@ body{
     flex-direction: column; /* adding this to make footer sticky */   
 }
 
-
-
 .container{
     width:100%;
     margin: 0 auto; /* 0 top and bottom, auto left and right*/
     padding:10px;
-    display:flex;
+    /*display:flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between;*/
     /*overflow: none;*/
+    text-align:right;
+   
+}
+
+#cont-greet{
+    
+    text-align:right;
 }
 
 .container h1{
     margin-top:10px;
     font-size:35px;
+    font-family: 'Lato';
+    font-style: bold;
+    
 }
 
-#user_first_name{
-    margin-top:10px;
-    font-size:35px;
-}
 
 .app-header{
     background-color: var(--primary-color);
+}
+
+.overall-content{
+    overflow:auto;
 }
 
 #grid-container{
@@ -52,36 +60,41 @@ body{
     /*grid-template-columns: repeat(2, 1fr);*/ /*repeating twice 1fr, creating two columns*/
     /*
     grid-gap: 3px;
-    overflow:auto;
     margin-left:7px;
     padding-top:10px; */
-    grid-template-columns: 25% 25% 25% 25%;
-    /* grid-template-rows: 25% 25% 25% 25%; */
+    grid-template-columns: 100%;
+    /*grid-template-columns: 25% 25% 25% 25%;*/
+    grid-gap:3px;
     grid-template-areas: 
-        "w w o o"
-        "w w o o"
-        "e e o o"
-        "e e o o"
-        "e e o o"
-        "e e s s"
-        "q q s s"
-        "q q s s";
+        "q q q q"
+        "q q q q"
+        "w w w w"
+        "w w w w"
+        "e e e e"
+        "e e e e"
+        "ou ou ou ou"
+        "ou ou ou ou";
     height:100%;
+   
     /*grid-gap:5px;*/
-    overflow:auto;
 }
 
 #grid-container .weather{
     display:flex;
     flex-direction:column;
-    
     grid-area: w;
-    background-color:#f6f5f0;
-    margin:5px;
+    background-color: #71829d;
+    margin-top:10px;
+    margin-right:3px;
     padding:5px;
-    box-shadow: 1px 2px 1px #ccc; /*2px blur*/
+    width:90%;
+    justify-self:center;
+    box-shadow: 1px 2px 1px #ccc; 
     padding-left:10px;
+    padding-bottom:5px;
     border-radius:10px;
+    text-decoration: none;
+    color:white;
 }
 
 #grid-container .weather #today{
@@ -89,37 +102,85 @@ body{
     width:38%;
     text-align: center;
     margin-top:10px;
-    background-color: #cae9dc;
-    box-shadow: 1px 2px 1px #ccc; /*2px blur*/
+    background-color: #4F5D73;
+    
     padding:3px;
     margin-bottom: 10px;
     border-radius:7px;
 }
 
+#weather-container{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#weather-data{
+    /*border:1px solid black;*/
+    margin-left:3px;
+    padding:2px;
+}
+
+#weather-data h2{
+    margin-top:15px;
+    font-size:35px;
+}
+
+#weather-data h4{
+    font-size:15px;
+    line-height:7px;
+    margin-bottom:5px;
+}
+
+#weather-description{
+    /*border:1px solid black;*/
+    margin-right:10px;
+    /*display:flex;
+    flex-direction:column;*/
+    margin-top:70px;
+}
+
+#weather-icon{
+   transform:translate(102px, -10px);
+}
+
+#weather-description h4{
+    text-transform: capitalize;
+}
+
+h4{
+    margin-top: 10px;
+}
+
 #grid-container .events{
     grid-area: e;
-    background-color:#e3e4e0;
+    background-color:#e9b78e;
     margin:5px;
     padding:5px;
+    padding-bottom:15px;
+    width:90%;
+    justify-self:center;
+    margin-right:10px;
+    margin-top:10px;
     box-shadow: 1px 2px 1px #ccc; /*2px blur*/
     padding-left:10px;
     border-radius:10px;
     display:flex;
     flex-direction: column;
+    text-decoration: none;
+    color:white;
 }
 
 #grid-container .events span h3{
     padding:3px;
 }
 
-
 #grid-container .events #events-today{
     /*border:1px solid black;*/
     width:40%;
     text-align: center;
     margin-top:10px;
-    background-color: #c7c8c0;
-    box-shadow: 1px 2px 1px #a2a396; /*2px blur*/
+    background-color: #E0995E;
     padding:3px;
     margin-bottom: 10px;
     border-radius:7px;
@@ -127,46 +188,72 @@ body{
 
 #grid-container .events .event-block{
     padding:5px;
-    background-color:#c7c8c0;
-    box-shadow: 1px 2px 1px #a2a396; 
+    background-color:#E0995E;
+    padding-left:10px;
+    padding-bottom:10px;
     margin-top:10px;
     width:95%;
     border-radius:7px;
 }
 
+
 #grid-container .quote{
     grid-area: q;
-    background-color:#f6f0f1;
+    background-color:#e9b78e;
     margin:5px;
     padding:5px;
+    padding-bottom:15px;
+    width:90%;
+    justify-self:center;
+    margin-right:10px;
+    margin-top:10px;
     box-shadow: 1px 2px 1px #ccc; /*2px blur*/
     padding-left:10px;
     border-radius:10px;
+    display:flex;
+    flex-direction: column;
+    text-decoration: none;
+    color:white;
 }
 
 #grid-container .quote #quote-today{
-    /*border:1px solid black;*/
-    width:38%;
+    width:40%;
     text-align: center;
     margin-top:10px;
-    background-color: #eadcdf;
-    box-shadow: 1px 2px 1px #ccc; /*2px blur*/
+    background-color: #E0995E;
     padding:3px;
     margin-bottom: 10px;
     border-radius:7px;
 }
 
+#quote-content{
+    padding:15px;
+    background-color:#E0995E;
+    padding-left:10px;
+    padding-bottom:10px;
+    margin-top:10px;
+    width:95%;
+    border-radius:7px;
+}
+
 #grid-container .outfit{
-    grid-area: o;
-    background-color:#f6f0f1;
+    grid-area: ou;
+    background-color:#71829d;
     margin:5px;
     padding:5px;
+    padding-bottom:10px;
+    width:90%;
+    justify-self:center;
+    margin-right:10px;
+    margin-top:10px;
+    margin-bottom:15px;
     box-shadow: 1px 2px 1px #ccc; /*2px blur*/
     padding-left:10px;
-    overflow:auto;
     display:flex;
-    flex-direction: column;
+    flex-direction:column;
     border-radius:10px;
+    color:white;
+    text-decoration: none;
 }
 
 #grid-container .outfit #outfit-today{
@@ -174,21 +261,35 @@ body{
     width:40%;
     text-align: center;
     margin-top:10px;
-    background-color: #dec8cd;
-    box-shadow: 1px 2px 1px #c6a0a9; /*2px blur*/
+    background-color: #4F5D73;
     padding:3px;
     margin-bottom: 10px;
     border-radius:7px;
 }
 
+#grid-container .outfit h5{
+    margin-top:8px;
+}
+
 #grid-container .outfit img{
-    width: auto;
-    height: 175px;
-    object-fit: fill;
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
     margin-top: 10px;
+    margin-right:10px;
     border-radius:7px;
 }
 
+#grid-container .outfit .event-block{
+    padding:5px;
+    background-color:#4F5D73;
+    padding-left:10px;
+    padding-bottom:10px;
+    margin-top:10px;
+    width:95%;
+    border-radius:7px;
+}
+/*
 .btn{
     width:90%;
     height:50px;
@@ -199,27 +300,28 @@ body{
     outline:none;
     border:none;
     box-shadow: 1px 2px 1px #c6a0a9;
-    background-color: #dec8cd; 
+    background-color: #dec8cd; */
     /*background-image: linear-gradient(185deg,#d9d9d9, #b2b8bc, #73838d);*/
-    background-size: 200%;;
+    /*background-size: 200%;;
     transition:0.5s;
-}
+}*/
 
+/*
 #grid-container .suggestor{
     grid-area: s;
     background-color:#f6f5f0;
     margin:5px;
     padding:5px;
     border-radius:10px;
-    box-shadow: 1px 2px 1px #ccc; /*2px blur*/
-    padding-left:10px;
+    box-shadow: 1px 2px 1px #ccc;*/ /*2px blur*/
+    /*padding-left:10px;
     overflow:auto;
     display:flex;
     flex-direction: column;
-}
+}*/
 
-#grid-container .suggestor span{
-    padding:3px;
+/*#grid-container .suggestor span{
+    padding:3px;*/
 }
 
 #grid-container .suggestor #suggestions-today{
@@ -261,18 +363,16 @@ body{
     display: flex; /*targeting list items and making them flex */
     flex-direction: column;
     align-items: center;
-}
-
-.app-footer ul p{
-    opacity:0.4;
+    
 }
 
 .app-footer ul li a{
-    font-size: 22px;
+    font-size: 18px;
     margin-bottom:5px;
     text-decoration:none;
     color: black;
     opacity: 0.4;
+    font-size: 22px;
 }
 
 .app-footer ul li .fa-home{

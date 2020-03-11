@@ -19,36 +19,45 @@
     <div class = "content">
         <header class="app-header">
             <div class="container">
-                <h1>EXPLORE</h1>
-                <input type="text" id="search" placeholder="Search here">
+                
+                <div id="cont-explore">
+                    <h1>Explore</h1>
+                </div>
                 <!-- <h3>FILTER</h3> -->
             </div>
         </header>
     </div>
 
-    <!-- <div class = "list">
-    <ul style="list-style-type:none;">
-        <a href = "https://www.realsimple.com/beauty-fashion/best-fashion-advice">The Best Fashion Advice of All Time (and How to Use It in Real Life)</a>
-        <a href = "https://news.adidas.com/x/adidas-launches-new-line-in-collaboration-with-pok-mon/s/c2a2d1f5-5efd-4f28-99ab-831ca1732258">Adidas Launches New Line In Collaboration With Pokémon</a>
-        <a href = "https://www.thebalancecareers.com/best-interview-attire-for-every-type-of-interview-2061364">The Best Outfits for Job Interviews
-        </a>
-      </ul>  
-    </div> -->
-
     <div class="grid_container">
-
-        <div class="item">
-            <a href = "https://www.realsimple.com/beauty-fashion/best-fashion-advice">The Best Fashion Advice of All Time (and How to Use It in Real Life)</a>
+        <div id="search-input">
+            <input type="text" id="search" placeholder="Search here">
         </div>
-
+        
         <div class="item">
-            <a href = "https://news.adidas.com/x/adidas-launches-new-line-in-collaboration-with-pok-mon/s/c2a2d1f5-5efd-4f28-99ab-831ca1732258">Adidas Launches New Line In Collaboration With Pokémon</a>
-        </div>
-
-        <div class="item">
-            <a href = "https://www.thebalancecareers.com/best-interview-attire-for-every-type-of-interview-2061364">The Best Outfits for Job Interviews
+            <a href = "https://www.realsimple.com/beauty-fashion/best-fashion-advice">
+                <div class="headline">
+                    The Best Fashion Advice of All Time (and How to Use It in Real Life)
+                </div> 
             </a>
         </div>
+
+        <div class="item2">
+            <a href = "https://news.adidas.com/x/adidas-launches-new-line-in-collaboration-with-pok-mon/s/c2a2d1f5-5efd-4f28-99ab-831ca1732258">
+                <div class="headline">
+                    Adidas Launches New Line In Collaboration With Pokémon
+                </div>
+            </a>
+        </div>
+
+        <div class="item">
+            <a href = "https://www.thebalancecareers.com/best-interview-attire-for-every-type-of-interview-2061364">
+                <div class="headline">
+                    The Best Outfits for Job Interviews
+                </div>
+            </a>
+        </div>
+
+        
 
     </div>
 
@@ -56,7 +65,7 @@
     <div class="app-footer">
         <ul>
             <li>
-                <a href = "home.html" class="fas fa-home"></a>
+                <a href = "home.php" class="fas fa-home"></a>
                 <p>HOME</p>
             </li>
 
@@ -70,7 +79,7 @@
                 <p>CLOSET</p>
             </li>
 
-            <li>
+            <li id="explore-icon">
                 <a href = "explore.html" class="fas fa-search"></a>
                 <p>EXPLORE</p>
             </li>

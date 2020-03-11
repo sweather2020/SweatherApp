@@ -1,20 +1,17 @@
 <?php
     session_start();
-    echo('BEGINNING OF HOME PAGE');
-    if (array_key_exists("user", $_SESSION) && $_SESSION["user"]=='brian@example.com'){
-        echo('BRIAN');
-        header('Location:' . 'home_brian.php');
+    
+    /*if ($_SESSION["isLogged"] == "1"){
+        echo('Logged in');
     }
 
-    else if (array_key_exists("user", $_SESSION) && $_SESSION["user"]=='ian@example.com'){
-        echo('IAN');
-        header('Location:' . 'home_ian.php');
+    if (array_key_exists("user", $_SESSION)){
+        echo($_SESSION["user"]);
     }
 
     else{
-        echo('NEW USER');
-        header('Location:' . 'home_newuser.php');
-    }
+        echo('Not logged in');
+    }*/
 ?>
 
 <!DOCTYPE html>
@@ -71,34 +68,16 @@
                         <div id="outfit-today">
                             OUTFIT
                         </div>
+                        <img src="img/beanie.jpg"/>
+                        <img src="img/topmancardigan.jpg"/>
+                        <img src="img/jeans.jpg"/>
+                        <img src="img/adidasshoes.jpg"/>
 
-                        <div>
+                        <!--<input type="submit" class="btn" value="STYLEME">-->
 
-                        There are currently no clothes in your closet!
-                        </div>
-
-                        <div>
-                            Click here to add clothes
-                        </div>
-                        <div>
-                        </div>
-
-
-                        asdfasdfasdf
-                        asdfasdfasdf asdfasdfasdf asdfasdfasdf asdfasdfasdf asdfasdfasdf asdfasdfasdf asdfasdfasdf
-
-
-
-                        asdfasdfasdfv
-
-                        <div>
-                        </div>
-                        <div>
-                        </div>
-
-                    </section>  
-                </a>
-
+                    </section> 
+                </a> 
+                
                 <a href="https://calendar.google.com/calendar/r?pli=1" class="events">
                     <section>
                         <div id="events-today">
@@ -111,8 +90,8 @@
                         </span>
 
                         <div class="event-block">
-                            <h4>DTC 1</h4>
-                            <h5>9:30AM-10:50AM</h5>
+                            <h4>MATH 300</h4>
+                            <h5>10-10:5APM</h5>
                         </div>
 
                         <div class="event-block">
@@ -121,21 +100,9 @@
                         </div>
 
                         <div class="event-block">
-                            <h4>REHEARSAL</h4>
-                            <h5>5-8PM</h5>
+                            <h4>STUDY SESSION</h4>
+                            <h5>7-8PM</h5>
                         </div>
-                    <!--
-                    <div class="event-block">
-                        <h4>DINNER W/ FRED</h4>
-                        <h5>9-11PM</h5>
-                    </div>
-
-                    <div class="event-block">
-                        <h4>REHEARSAL</h4>
-                        <h5>9-11PM</h5>
-                    </div>-->
-
-                    
                     </section>
                 </a>
             </div>
@@ -171,7 +138,7 @@
         </ul>
     </div>
 
-        <script src="home_newuser.js"></script>
+        <script src="home_ian.js"></script>
 </body>
 
 </html>
