@@ -43,29 +43,30 @@ body{
 /* Dropdown Button */
 
 .dropbtn1 {
-    background-color: #3498DB;
-    color: white;
-    padding: 16px;
+    color: black;
+    padding: 16px 103px 16px 103px;
+    margin-bottom: 5px;
     font-size: 16px;
-    border: none;
-    cursor: pointer;
+    border: solid;
+    border-color: black;
+    background-color: white;
   }
 
   .dropbtn2 {
-    background-color: #3498DB;
-    color: white;
-    padding: 16px;
+    color: black;
+    padding: 16px 100px 16px 100px;
     font-size: 16px;
-    border: none;
-    cursor: pointer;
+    border: solid;
+    border-color: black;
+    background-color: white;
   }
   
   .dropbtn1:hover, .dropbtn1:focus {
-    background-color: #2980B9;
+    background-color: whitesmoke;
   }
 
   .dropbtn2:hover, .dropbtn2:focus {
-    background-color: #2980B9;
+    background-color: whitesmoke;
   }
   
   .dropdown {
@@ -76,7 +77,7 @@ body{
   .dropdown-content1 {
     display: none;
     position: absolute;
-    background-color: #f1f1f1;
+    background-color: white;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -85,7 +86,7 @@ body{
   .dropdown-content2 {
     display: none;
     position: absolute;
-    background-color: #f1f1f1;
+    background-color: white;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -104,11 +105,7 @@ body{
     text-decoration: none;
     display: block;
   }
-  
-  .dropdown-content1 a:hover {background-color: #ddd}
 
-  .dropdown-content2 a:hover {background-color: #ddd}
-  
   .show {display:block;}
 
 /* End Dropdown Button */
