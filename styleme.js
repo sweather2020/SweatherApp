@@ -17,7 +17,7 @@ function myFunction2() {
         }
       }
     }
-    else if (!event.target.matches('.dropbtn2')) {
+    if (!event.target.matches('.dropbtn2')) {
       var dropdowns = document.getElementsByClassName("dropdown-content2");
       var i;
       for (i = 0; i < dropdowns.length; i++) {
