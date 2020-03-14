@@ -191,11 +191,9 @@ Figure 6: New user home page
 
 We integrated data from two different APIs, a weather API and a random quote generator API, in the home page. One of the most important aspects that people take into account when considering their outfit for the day is weather, so it made sense to include live weather updates based on location for the user every time they access the app. Since we want our app to ultimately empower users to try a new style or start off the day right with the right outfit, we thought it would be fitting to have a quote to greet the user. In our first iteration of this component, it consisted of two columns of scrollable panels that were not clickable. However, the entire page in itself was also scrollable, which posed some haptic challenges for the user since it would be hard to distinguish what area they were scrolling in. Visually, it was cluttered and busy, so we decided to simplify the design to just one column with each panel spanning the width of the screen. Many users mentioned that the panels afforded clicking, so we linked each panel to an appropriate page. For instance, the weather panel routes the user to the API website we used, which displays a more comprehensive overview of the weather, and the events panel directs the user to Google Calendar. 
 
+![homepage first iteration](img/figure7.png)
 
-Figure 6: Home page first iteration
-
-
-
+Figure 7: Home page first iteration
 
 
 
@@ -229,7 +227,10 @@ Figure 6: Home page first iteration
 
 
 
-Figure 7: Home page second iteration
+
+![homepage second iteration](img/figure8.png)
+
+Figure 8: Home page second iteration
 
 ### Interactive Data Filter
 
