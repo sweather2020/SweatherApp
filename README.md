@@ -153,7 +153,7 @@ Some examples of our validation techniques include ensuring the user does not le
 
 
 
-
+![homepage navigate signup](img/figure5.png)
 
 Figure 5: Navigate to ‘Create Account’ page by clicking on ‘Sign Up’ from Login page
 
@@ -183,7 +183,7 @@ Figure 5: Navigate to ‘Create Account’ page by clicking on ‘Sign Up’ fro
 
 
 
-
+![new user hompage](img/figure6.png)
 
 Figure 6: New user home page
 
