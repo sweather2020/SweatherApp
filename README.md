@@ -238,12 +238,14 @@ For this category, we implemented two components: a filter function for the Clos
 
 
 
+![homepage first iteration](img/figure9.png)
 
-Figure 8: Closet page, filter menu, and resultant page after applying ‘Black’ color criteria
+Figure 9: Closet page, filter menu, and resultant page after applying ‘Black’ color criteria
 
 On the StyleMe page, we have two dropdown menus using which the user will be able to input a weather condition and an occasion condition so that the app would dynamically generate outfit suggestions based on them(a screenshot of the page is included in Figure9). At the moment, we have only incorporated a limited number of weather conditions and occasions for the user to choose from. We also only implemented the outfit suggestion component in a way that is hard-coded. Ideally, for the automatic suggestion function, we would find which pieces of clothes are suitable given the conditions input by the user and then we would use some clustering algorithm to determine which pieces look the best together to generate the suggestion.
 
 
+Figure 10: StyleMe page, dropdown menus, and two different outfit suggestions given different user inputs
 
 
 ## Reflection
