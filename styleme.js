@@ -28,3 +28,46 @@ function myFunction2() {
       }
     }
   }
+
+  document.getElementById("buttons").onclick = function() {reset()};
+
+  function reset() {
+    document.getElementsByClassName("dropbtn1")[0].innerHTML = "Sunny";
+    document.getElementsByClassName("dropbtn2")[0].innerHTML = "School";
+  }
+
+  document.getElementById("w1").onclick = function() {Sunny()};
+
+  document.getElementById("w2").onclick = function() {Rainy()};
+
+  document.getElementById("w3").onclick = function() {Windy()};
+
+  function Sunny() {
+    document.getElementsByClassName("dropbtn1")[0].innerHTML = "Sunny";
+  }
+
+  function Rainy() {
+    document.getElementsByClassName("dropbtn1")[0].innerHTML = "Rainy";
+  }
+
+  function Windy() {
+    document.getElementsByClassName("dropbtn1")[0].innerHTML = "Windy";
+  }
+
+  document.getElementById("o1").onclick = function() {School()};
+
+  document.getElementById("o2").onclick = function() {Work()};
+
+  document.getElementById("o3").onclick = function() {_Date()};
+
+  function School() {
+    document.getElementsByClassName("dropbtn2")[0].innerHTML = "School";
+  }
+
+  function Work() {
+    document.getElementsByClassName("dropbtn2")[0].innerHTML = "Work";
+  }
+
+  function _Date() {
+    document.getElementsByClassName("dropbtn2")[0].innerHTML = "Date";
+  }
