@@ -255,3 +255,15 @@ Figure 10: StyleMe page, dropdown menus, and two different outfit suggestions gi
 We managed to implement a rough draft of the interfaces for our clothing app within the 10 weeks we had. We built out some indispensable, basic functions such as logging in and creating an account, and experimented with some more advanced functions, such as filtering and suggesting based on user input. We tried to incorporate visual design principles by utilizing white space and paying attention to consistency in shapes, contrast and fonts. 
 
 For future development, we hope to incorporate more backend development into this app, such as using a database with PHP to support more than two users and properly allow users to sign up without directing them to a default/generic home page, as well as allowing user to actually make CRUD requests to store and update information of items in their closet. Once equipped with the adequate skills, we discussed exploring into adding an augmented reality (AR) feature that allows the users to see what the outfit looks like on them. Currently, our StyleMe feature is not as advanced as it could be, and it would be worth taking the time to implement a more precise feature by leveraging principles of machine learning so that the suggestions become more specific to the user according to his or her past data. 
+
+
+Links:
+
+1.Link to github webpage:
+https://sweather2020.github.io/SweatherApp/explore.html
+2.Link to video of the working prototype
+https://youtu.be/Mg3_QXyEeEE
+
+3.Instructions for running the app:
+It is the best to open it with Chrome using the iPhone X mobile view in inspect, if you just want to directly look at the content part of the app. If you want to start from logging in or look at our sign in/ sign up pages, you need to use a  server to run php files for login (index.php). (In our case, we used MAMP to run the php files)
+
