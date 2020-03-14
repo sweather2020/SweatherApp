@@ -257,6 +257,7 @@ We managed to implement a rough draft of the interfaces for our clothing app wit
 For future development, we hope to incorporate more backend development into this app, such as using a database with PHP to support more than two users and properly allow users to sign up without directing them to a default/generic home page, as well as allowing user to actually make CRUD requests to store and update information of items in their closet. Once equipped with the adequate skills, we discussed looking into adding an augmented reality (AR) feature that allows the users to see what the outfit looks like on them. Currently, our StyleMe feature is not as advanced as it could be, and it would be worth taking the time to implement a more precise feature by leveraging principles of machine learning so that the suggestions become more specific to the user according to his or her past data. 
 
 
+
 Links:
 
 1.Link to github webpage:
