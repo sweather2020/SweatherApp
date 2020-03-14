@@ -1,6 +1,6 @@
 # SweatherApp
 
-Problem & Related Work 
+## Problem & Related Work ## 
 	Deciding what to wear during the day or for a night out can be a source of stress and lost time for many people. Things that are considered when planning an outfit include the type of style they want to express, what they will be doing in the outfit, and the weather throughout the day. While on average people take 5-10 minutes selecting their outfit (Figure 1), which may not sound like much, those minutes start to add up over time. According to a survey conducted by clothing company Matalan, the average woman spends about 287 days of her life choosing outfits for everything from work to parties. 
 	Pre existing solutions on the market include mobile apps, such as Pureple Prep, Smart Closet, and Stylebook, but none of them successfully synthesize live weather data and user event data (e.g. calendar events) to provide appropriate outfit suggestions. Many of these apps either lack the outfit suggestion feature and focus on other features, such as the e-closet, or integrate the outfit suggestion feature but have a very unintuitive, buggy UI. Some of them also render too many pop-up ads when the user tries to click on things.
 
