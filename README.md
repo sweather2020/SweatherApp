@@ -261,6 +261,7 @@ Links:
 
 1.Link to github webpage:
 https://sweather2020.github.io/SweatherApp/explore.html
+
 2.Link to video of the working prototype
 https://youtu.be/Mg3_QXyEeEE
 
