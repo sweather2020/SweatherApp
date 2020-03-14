@@ -46,6 +46,8 @@ h1{
 .header h1{
     letter-spacing:2px;
 }
+
+
 img{
     border-radius: 50%;
     width: 100%;
@@ -77,7 +79,7 @@ img{
 }
 
 :root {
-    --primary-color:#f9f9f9;
+    --primary-color:#ececec;
 }
 
 *{
@@ -97,6 +99,10 @@ body{
     display: flex; /* adding this to make footer sticky */
     flex-direction: column; /* adding this to make footer sticky */  
     background-color:white; 
+}
+
+.app-header{
+    background-color: var(--primary-color);
 }
 
 .content{

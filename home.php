@@ -44,9 +44,6 @@
             </header>
         </div>
 
-    <!--<p>Welcome to home page</p>-->
-        <!--<p><a href="auth/logout.php">Logout</a>-->
-
         <div id="grid-container">
                 <section class="quote">
                     <div id="quote-today">

@@ -1,5 +1,5 @@
 :root {
-    --primary-color:#f9f9f9;
+    --primary-color:#ececec;
 }
 
 *{
@@ -18,6 +18,10 @@ body{
     font-family: 'Roboto', sans-serif;
     display: flex; /* adding this to make footer sticky */
     flex-direction: column; /* adding this to make footer sticky */   
+}
+
+.app-header{
+    background-color:var(--primary-color);
 }
 
 .container h1{

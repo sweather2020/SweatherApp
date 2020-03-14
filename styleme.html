@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie-edge">
-    <link rel="stylesheet" href="styleme.css"/>
+    <link rel="stylesheet" href="styleme2.css"/>
     <link rel="stylesheet" href="fontawesome-free-5.12.1-web/css/all.min.css"/>
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     
@@ -28,25 +28,50 @@
 
     <div id="outfit-box">
         <section class="clothing">
-            <div>pieces of outfit go here</div>
+            <div class="gallery">
+                <div class="card">
+                    <div id="image">
+                        <img src = img/79b1ef928e416961a702ec0ac467c426.jpg alt="Sunny Date School">
+                    </div>
+                    
+                </div>
+                <div class="card">
+                    <div id="image">
+                        <img src = img/3736a15ea07cca8e85a7a0f3e275bfa4.jpg alt="Sunny School">
+                    </div>
+                    
+                </div>
+                <div class="card">
+                    <div id="image">
+                        <img src = img/2eb272ac13b0d84477407143f4007db9.jpg alt="Windy Rainy School Work">
+                    </div>
+                    
+                </div>
+              </div>
         </section>
 
-        <section class="selector">
-            <div>weather dropdown goes here</div>
-        </section>
+        <div class="dropdown">
+            <button onclick="myFunction1()" class="dropbtn1">Sunny</button>
+            <div id="myDropdown1" class="dropdown-content1">
+              <a id="w1" href="#">Sunny</a>
+              <a id="w2" href="#">Rainy</a>
+              <a id="w3" href="#">Windy</a>
+            </div>
+          </div>
 
-        <section class="selector">
-            <div>occasion dropdown goes here</div>
-        </section>
+        <div class="dropdown">
+            <button onclick="myFunction2()" class="dropbtn2">School</button>
+            <div id="myDropdown2" class="dropdown-content2">
+              <a id="o1" href="#">School</a>
+              <a id="o2" href="#">Work</a>
+              <a id="o3" href="#">Date</a>
+            </div>
+          </div>
     </div> 
 
-    <div id="buttons">
-        <section class="outfit-button">
+    <div id="button">
+        <section id="buttons" class="outfit-button">
             <i class="fas fa-sync"></i>
-        </section>
-
-        <section class="outfit-button">
-            <i class="fas fa-backspace"></i>
         </section>
     </div> 
 
@@ -57,7 +82,7 @@
                 <p>HOME</p>
             </li>
 
-            <li id="style-icon">
+            <li>
                 <a href = "styleme.html" class="fas fa-tshirt"></a>
                 <p>STYLEME</p>
             </li>
@@ -79,6 +104,6 @@
         </ul>
     </div>
 
-    <script src="filter.js"></script>
+    <script src="styleme.js"></script>
 </body>
 </html>

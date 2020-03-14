@@ -200,6 +200,12 @@ const applyFilter = () =>{
             }
         }
 
+        else if (categorySet.size===0 && colorSet.size===0 && seasonSet.size===0){
+            
+            initialLoading();
+            
+        }
+
         
     })
    displayArea.innerHTML="";
@@ -213,7 +219,7 @@ const applyFilter = () =>{
 
     }
     // clearing out criteria after hitting Apply
-    for (const checkbox of categoryCheckboxes){
+    /*for (const checkbox of categoryCheckboxes){
         checkbox.checked=false;
     };
     for (const checkbox of colorCheckboxes){
@@ -224,7 +230,7 @@ const applyFilter = () =>{
     };
     categorySet.clear();
     colorSet.clear();
-    seasonSet.clear();
+    seasonSet.clear();*/
 
     document.getElementById("filter-bar").style.width = "0";
     console.log(filteredList);
