@@ -4,6 +4,7 @@
 - Download a server, such as MAMP, that can support PHP 
 - Clone the repository to your computer 
 - Launch the server and access the index.php page (Login page)
+- Right click on page and click 'Inspect'; set view to iPhoneX
 - Type 'brian@example.com' as the username and 123456 as the password to access Brian's account or 'ian@example.com' as the username and 123456 as the password to access Ian's account
 - Have fun exploring our app! 
 
