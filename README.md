@@ -261,6 +261,7 @@ Links:
 
 1.Link to github webpage:
 https://sweather2020.github.io/SweatherApp/home.html
+We cannot generate github pages for php files, which our latest pages are written in. Therefore this shows you everything but the latest home page and the signin/signout pages. to see the full app you'd still need to use a php server to run the app from the index.php(the login page) 
 
 2.Link to video of the working prototype
 https://youtu.be/Mg3_QXyEeEE
