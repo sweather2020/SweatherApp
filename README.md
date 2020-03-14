@@ -14,7 +14,7 @@ Deciding what to wear during the day or for a night out can be a source of stres
 
 Pre existing solutions on the market include mobile apps, such as Pureple Prep, Smart Closet, and Stylebook, but none of them successfully synthesize live weather data and user event data (e.g. calendar events) to provide appropriate outfit suggestions. Many of these apps either lack the outfit suggestion feature and focus on other features, such as the e-closet, or integrate the outfit suggestion feature but have a very unintuitive, buggy UI. Some of them also render too many pop-up ads when the user tries to click on things.
 
-
+![Outfit Picking graph](img/figure1.png)
 Figure 1: Graph of the average amount of time it takes men and women to pick an outfit
 
 
