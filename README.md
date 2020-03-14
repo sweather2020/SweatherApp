@@ -113,54 +113,8 @@ We created a login page to support two different users using PHP; once the users
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+![homepage](img/figure4.png)
+![homepage](img/figure4-1.png)
 
 Figure 4: Login and the corresponding Home pages based on login info
 
@@ -231,7 +185,7 @@ Figure 5: Navigate to ‘Create Account’ page by clicking on ‘Sign Up’ fro
 
 
 
-              Figure 6: New user home page
+Figure 6: New user home page
 
 ### External Data Integration
 
@@ -286,7 +240,9 @@ For this category, we implemented two components: a filter function for the Clos
 
 Figure 8: Closet page, filter menu, and resultant page after applying ‘Black’ color criteria
 
-	On the StyleMe
+On the StyleMe page, we have two dropdown menus using which the user will be able to input a weather condition and an occasion condition so that the app would dynamically generate outfit suggestions based on them(a screenshot of the page is included in Figure9). At the moment, we have only incorporated a limited number of weather conditions and occasions for the user to choose from. We also only implemented the outfit suggestion component in a way that is hard-coded. Ideally, for the automatic suggestion function, we would find which pieces of clothes are suitable given the conditions input by the user and then we would use some clustering algorithm to determine which pieces look the best together to generate the suggestion.
+
+
 
 
 ## Reflection
