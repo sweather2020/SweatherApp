@@ -27,16 +27,7 @@ Figure 1: Graph of the average amount of time it takes men and women to pick an 
 
 
 
-
-
-
-
-
-
-
-
-
-
+![Smart Closet](img/figure2.png)
 
 Figure 2: e-Closet and Home pages of Smart Closet; lacks outfit suggestion feature and user personalization and is targeted more towards female users 
 
@@ -55,7 +46,7 @@ Figure 2: e-Closet and Home pages of Smart Closet; lacks outfit suggestion featu
 
 
 
-
+![Pureple Prep](img/figure3.png)
 Figure 3: Wardrobe (e.g. e-Closet) and Outfits Suggestion pages of Pureple Prep; inconsistent, difficult UI; footer would randomly disappear; buttons would move when user scrolls 
 
 ## User Research
