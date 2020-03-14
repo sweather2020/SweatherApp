@@ -55,16 +55,16 @@ Figure 3: Wardrobe (e.g. e-Closet) and Outfits Suggestion pages of Pureple Prep;
 
 In our user research, we had two main goals: to gauge who our primary users are and to identify possible primary features to include in our app. Our research approach consisted of sending out a simple survey to over 50 people in order to get a better idea of important aspects people take into account when choosing clothes, interviewing three people to learn more about their general habits when picking clothes, and conducting a contextual inquiry with one user using the Pureple Prep app. After completing our research, we identified a couple key user personas for our app:
 
-College students
-Fashion influencers/Fashionistas 
-Young working professionals
-Middle-aged adults 
+- College students
+- Fashion influencers/Fashionistas 
+- Young working professionals
+- Middle-aged adults 
 
-Based on the insight we gained from the interviews and observation, we concluded three central needs across the different users:
+Based on the insight we gained from the interviews and observation, we indentified three central needs across the different users:
 
-To pick out an expressive yet appropriate outfit for the day that matches the occasion, weather, and user’s mood all in a timely manner
-To organize and remember the clothes they own 
-To get inspiration on how to improve their outfits and also gain confidence about their outfit choice
+- To pick out an expressive yet appropriate outfit for the day that matches the occasion, weather, and user’s mood all in a timely manner
+- To organize and remember the clothes they own 
+- To get inspiration on how to improve their outfits and also gain confidence about their outfit choice
 	
 A recurring pattern we noticed in our users’ responses was that many were open to switching up their styles but were deterred by lack of knowledge, fear, or insufficient time and energy. Many users also voiced their struggle to accurately match the temperature displayed on the weather app and the actual feeling of the weather with an appropriate outfit so that they are not too cold or too warm for the day. 
 
@@ -73,9 +73,9 @@ Link to Paper Prototype: https://m.youtube.com/watch?v=oZDp9HbBGVg&feature=youtu
 
 In our paper prototyping phase, we collected all of the information from our user research phase and implemented a rough physical sketch of our app. We had a total of three users test our prototype and had them attempt to complete three tasks: 
 
-Create an account
-Pick an outfit
-Save the outfit
+- Create an account
+- Pick an outfit
+- Save the outfit
 
 All users completed the first two tasks relatively easily and found the flow of the app to be rather self-explanatory. The only pain point that we needed to address was whether users would be directed to the home page or sign up page once they sign up for a new account, and we decided it made the most sense to route them to a new home page. However, the last task posed some noticeable confusion when the user was not sure whether to press the heart icon or floppy disk icon to save the outfit. This difficulty indicated to us that we should minimize the number of buttons in order to maintain the simplicity of the app and avoid overwhelming the user with too many features. Similarly, users encountered some trouble in the closet page when they experimented with the add button in the top left hand corner next to the labels with the categories of clothes. Some users interpreted it as adding another category rather than adding a new article of clothing, so we thought of different ways to make that functionality simpler and visually cleaner. 
 
@@ -85,10 +85,10 @@ Leveraging the feedback we received from our users, we decided to focus our atte
 
 Moving into our high-fidelity prototype, we decided to pursue four main components:
 
-User Profiles
-Data Collection Form
-External Data Integration
-Interactive Data Filter 
+- User Profiles
+- Data Collection Form
+- External Data Integration
+- Interactive Data Filter 
 
 ### User Profiles
 
@@ -123,12 +123,12 @@ Figure 4: Login and the corresponding Home pages based on login info
 
 We created a Sign Up form for new users with six fields of text and radio types that are validated upon submitting the form:
 
-Username
-Email
-Phone
-Password
-Password confirmation
-Gender
+- Username
+- Email
+- Phone
+- Password
+- Password confirmation
+- Gender
 
 Some examples of our validation techniques include ensuring the user does not leave any fields blank, include ‘@...com’ within the ‘Email’ field, and type only integers for the ‘Phone’ field. Based on form design principles, we top-aligned our form labels to reduce form completion time for users. Once the user clicks on the ‘Sign Up’ button, it leads them to a home page for new users. 
 
@@ -254,15 +254,19 @@ Figure 10: StyleMe page, dropdown menus, and two different outfit suggestions gi
 
 We managed to implement a rough draft of the interfaces for our clothing app within the 10 weeks we had. We built out some indispensable, basic functions such as logging in and creating an account, and experimented with some more advanced functions, such as filtering and suggesting based on user input. We tried to incorporate visual design principles by utilizing white space and paying attention to consistency in shapes, contrast and fonts. 
 
-For future development, we hope to incorporate more backend development into this app, such as using a database with PHP to support more than two users and properly allow users to sign up without directing them to a default/generic home page, as well as allowing user to actually make CRUD requests to store and update information of items in their closet. Once equipped with the adequate skills, we discussed exploring into adding an augmented reality (AR) feature that allows the users to see what the outfit looks like on them. Currently, our StyleMe feature is not as advanced as it could be, and it would be worth taking the time to implement a more precise feature by leveraging principles of machine learning so that the suggestions become more specific to the user according to his or her past data. 
+For future development, we hope to incorporate more backend development into this app, such as using a database with PHP to support more than two users and properly allow users to sign up without directing them to a default/generic home page, as well as allowing user to actually make CRUD requests to store and update information of items in their closet. Once equipped with the adequate skills, we discussed looking into adding an augmented reality (AR) feature that allows the users to see what the outfit looks like on them. Currently, our StyleMe feature is not as advanced as it could be, and it would be worth taking the time to implement a more precise feature by leveraging principles of machine learning so that the suggestions become more specific to the user according to his or her past data. 
+
 
 
 Links:
 
-1.Link to github webpage: https://sweather2020.github.io/SweatherApp/home.html 
+1.Link to github webpage:
+https://sweather2020.github.io/SweatherApp/home.html
+We cannot generate github pages for php files, which our latest pages are written in. Therefore this shows you everything but the latest home page and the signin/signout pages. to see the full app you'd still need to use a php server to run the app from the index.php(the login page) 
 
-We cannot generate github pages for php files, which our latest pages are written in. Therefore this shows you everything but the latest home page and the signin/signout pages. to see the full app you'd still need to use a php server to run the app from the index.php(the login page)
+2.Link to video of the working prototype
+https://youtu.be/Mg3_QXyEeEE
 
-2.Link to video of the working prototype https://youtu.be/Mg3_QXyEeEE
+3.Instructions for running the app:
+It is the best to open it with Chrome using the iPhone X mobile view in inspect, if you just want to directly look at the content part of the app. If you want to start from logging in or look at our sign in/ sign up pages, you need to use a  server to run php files for login (index.php). (In our case, we used MAMP to run the php files)
 
-3.Instructions for running the app: It is the best to open it with Chrome using the iPhone X mobile view in inspect, if you just want to directly look at the content part of the app. If you want to start from logging in or look at our sign in/ sign up pages, you need to use a server to run php files for login (index.php). (In our case, we used MAMP to run the php files)
