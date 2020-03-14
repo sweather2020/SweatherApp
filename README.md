@@ -260,7 +260,7 @@ For future development, we hope to incorporate more backend development into thi
 Links:
 
 1.Link to github webpage:
-https://sweather2020.github.io/SweatherApp/explore.html
+https://sweather2020.github.io/SweatherApp/home.html
 
 2.Link to video of the working prototype
 https://youtu.be/Mg3_QXyEeEE
